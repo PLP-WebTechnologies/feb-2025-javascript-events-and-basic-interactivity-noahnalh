@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Interactive Web Playground</h1>
+
+    <!-- Event Handling Section -->
+    <div>
+        <h2>Event Handling</h2>
+
+        <button id="clickBtn">Click Me!</button>
+
+        <!-- Removed box around input field, and added styling -->
+        <input type="text" id="keypressInput" placeholder="Press any key"
+            style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+        <!-- Note for checking the console -->
+        <p id="keyPressNote" style="display: none; color: green;">Check the console after pressing any key!</p>
+    </div>
+
+    <div>
+        <h2>Secret Double Click</h2>
+        <button id="secretBtn">Double-click me or Long press</button>
+    </div>
+
+    <!-- Interactive Elements Section -->
+    <div>
+        <h2>Change Button Text, Color, and Font</h2>
+        <button id="colorChangeBtn">Click to Change Text, Color & Font</button>
+    </div>
+
+    <!-- Image Gallery Section -->
+    <div id="gallery">
+        <img id="galleryImage" src="https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg"
+            alt="Gallery Image" width="300">
+    </div>
+    <button id="nextImage">Next Image</button>
+
+    <!-- Tab Switching Section -->
+    <div>
+        <button class="tab" data-target="tab1Content">Tab 1</button>
+        <button class="tab" data-target="tab2Content">Tab 2</button>
+        <button class="tab" data-target="tab3Content">Tab 3</button>
+
+        <div class="tab-content" id="tab1Content" style="display: none;">
+            <h3>Tab 1 Content</h3>
+            <p>This is the content for Tab 1.</p>
+        </div>
+        <div class="tab-content" id="tab2Content" style="display: none;">
+            <h3>Tab 2 Content</h3>
+            <p>This is the content for Tab 2.</p>
+        </div>
+        <div class="tab-content" id="tab3Content" style="display: none;">
+            <h3>Tab 3 Content</h3>
+            <p>This is the content for Tab 3.</p>
+        </div>
+    </div>
+
+    <!-- Form Validation Section -->
+    <div>
+        <h2>Sign Up Form</h2>
+        <form id="signupForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formFeedback"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
