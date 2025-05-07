@@ -55,9 +55,9 @@ const images = [
   "https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg", // image 1
   "https://images.pexels.com/photos/712639/pexels-photo-712639.jpeg", // image 2
   "https://images.pexels.com/photos/306407/pexels-photo-306407.jpeg", // image 3
-  "https://images.pexels.com/photos/1744980/pexels-photo-1744980.jpeg", // image 4
-  "https://images.pexels.com/photos/974249/pexels-photo-974249.jpeg", // image 5
-  "https://images.pexels.com/photos/1317567/pexels-photo-1317567.jpeg", // image 6
+  "https://images.pexels.com/photos/1586951/pexels-photo-1586951.jpeg", // image 4 
+  "https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg", // image 5 
+  "https://images.pexels.com/photos/3184425/pexels-photo-3184425.jpeg", // image 6 
   "https://images.pexels.com/photos/1048272/pexels-photo-1048272.jpeg", // image 7
   "https://images.pexels.com/photos/3280147/pexels-photo-3280147.jpeg", // image 8
   "https://images.pexels.com/photos/3155397/pexels-photo-3155397.jpeg", // image 9
@@ -93,26 +93,4 @@ document.querySelectorAll(".tab").forEach((button) => {
 
 // Form Validation Section
 
-document.getElementById("signupForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-  const feedback = document.getElementById("formFeedback");
-
-  const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  const passwordValid = password.length >= 8;
-
-  if (!emailValid) {
-    feedback.textContent = "Invalid email format.";
-  } else if (!passwordValid) {
-    feedback.textContent = "Password must be at least 8 characters.";
-  } else {
-    feedback.textContent = "Form submitted successfully!";
-  }
-});
-
-// Real-time feedback
-document.getElementById("password").addEventListener("input", function () {
-  const feedback = document.getElementById("formFeedback");
-  feedback.textContent = this.value.length < 8 ? "Password too short!" : "";
-});
+document.getElem;
